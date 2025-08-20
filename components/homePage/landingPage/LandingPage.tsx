@@ -187,8 +187,11 @@ export default function LandingPage() {
                 .fill(0)
                 .map((_, i) => (
                   <Image
+                    key={i}
                     src={`/homePage/landingPage/connect-${i + 1}.png`}
-                    className={`w-10 h-10 rounded-full ${i !== 0 ? "-ml-3": ""} border-3`}
+                    className={`w-10 h-10 rounded-full ${
+                      i !== 0 ? "-ml-3" : ""
+                    } border-3`}
                     alt="Connect"
                     width={40}
                     height={40}

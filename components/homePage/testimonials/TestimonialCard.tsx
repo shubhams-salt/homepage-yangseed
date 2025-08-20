@@ -29,7 +29,7 @@ export default function TestimonialCard({
         className={baumans.className}
         style={{ color: "var(--bgNdTextBlue)" }}
       >
-        "{title}"
+        &ldquo;{title}&rdquo;
       </Heading>
       <Paragraph
         className="font-normal"
@@ -41,7 +41,7 @@ export default function TestimonialCard({
           overflow: "hidden",
         }}
       >
-        "{feedback}"
+        &ldquo;{feedback}&rdquo;
       </Paragraph>
     </div>
   );
