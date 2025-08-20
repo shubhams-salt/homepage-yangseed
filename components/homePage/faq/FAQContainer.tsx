@@ -47,7 +47,7 @@ const FAQS = [
 
 export default function FAQContainer() {
   return (
-    <div className="faqContainer | flex flex-col gap-16 my-16 md:my-20 lg:my-28 w-full">
+    <div className="faqContainer | flex flex-col gap-16 my-16 md:my-20 lg:my-28 px-4 mx-auto w-full">
       <Heading
         headingLevel="h2"
         size={56}

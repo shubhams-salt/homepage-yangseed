@@ -6,7 +6,7 @@ export const baumans = Baumans({
   variable: "--baumans-font",
 });
 export const inter = Inter({
-  weight: ["400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--inter-font",
 });

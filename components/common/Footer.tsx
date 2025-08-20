@@ -6,7 +6,7 @@ import Logo from "./Logo";
 export default function Footer() {
   return (
     <div className="footerContainer | py-12 px-5 md:py-20 md:px-10 lg:py-24 lg:px-24 bg-[var(--footerBlue)]">
-      <div className="footer | flex flex-wrap items-start justify-between gap-8 pb-6 border-b-1 border-b-[var(--navyBlue)]">
+      <div className="footer | flex flex-wrap items-start justify-between gap-8 pb-6 max-w-[1224px] mx-auto border-b-1 border-b-[var(--navyBlue)]">
         <div className="aboutCompany | flex flex-col gap-7 w-full lg:w-[390px]">
           <Logo />
           <Paragraph className="leading-[1.5] font-normal" size={14}>

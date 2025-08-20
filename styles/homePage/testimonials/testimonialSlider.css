@@ -1,0 +1,58 @@
+.testimonialSlider {
+  --totalCardCount: 1;
+  --cardWidth: 256px;
+}
+.testimonialSlider[data-dir="right"] {
+  translate: 4px 0;
+  animation: slideRight 20s linear infinite;
+}
+.testimonialSlider[data-dir="left"] {
+  translate: -4px 0;
+  animation: slideLeft 20s linear infinite;
+}
+.testimonialSlider > .testimonialCard:first-of-type {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.testimonialSlider > .testimonialCard:last-of-type {
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+@keyframes slideRight {
+  from,
+  to {
+    translate: 4px 0;
+  }
+  95% {
+    translate: calc(
+        -1 * var(--cardWidth) * calc(var(--totals_cards) - var(--totalCardCount))
+      )
+      0;
+  }
+}
+@keyframes slideLeft {
+  from,
+  to {
+    translate: -4px 0;
+  }
+  95% {
+    translate: calc(
+        var(--cardWidth) * calc(var(--totals_cards) - var(--totalCardCount))
+      )
+      0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonialSlider {
+    --totalCardCount: 2;
+    --cardWidth: 320px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .testimonialSlider {
+    --totalCardCount: 3;
+    --cardWidth: 384px;
+  }
+}
